@@ -1136,6 +1136,9 @@ var _              = require('lodash'),
         grunt.registerTask('dev', 'Dev Mode; watch files and restart server on changes',
            ['default', 'express:dev', 'watch']);
 
+        grunt.registerTask('server', 'Dev Mode; watch files and restart server on changes',
+           ['init', 'express:dev', 'watch']);
+
         // ### Release
         // Run `grunt release` to create a Ghost release zip file.
         // Uses the files specified by `.npmignore` to know what should and should not be included.
